@@ -46,7 +46,7 @@ angular.module('pollster.services', [])
 
   // [input] userId
   // [output] an array of all polls associated with 'userId'
-  // [side effects] 
+  // [side effects]
   var getPollsFromDb = function(userId) {
     return $http({
       method: 'GET',
@@ -105,7 +105,7 @@ angular.module('pollster.services', [])
 
 
   // [input] recieves pollId
-  // [output] 
+  // [output]
   // [side effects] deletes a poll in the database from all tables
   var deletePoll = function(pollId) {
     return $http({

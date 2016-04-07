@@ -8,7 +8,15 @@ if(process.env.DATABASE_URL) {
     host: 'ec2-107-20-148-211.compute-1.amazonaws.com'
   });
 } else {
-  var db = new Sequelize('latte', 'root', '');
+  var db = new Sequelize('latte', 'root', '',
+    {
+      host: 'localhost',
+      dialect: 'mysql',
+      // port:1036,
+      define: {
+       timestamps: false
+    }
+  });
 }
 
 // Declares the schema for a user
