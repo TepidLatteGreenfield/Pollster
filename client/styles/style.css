@@ -1,10 +1,10 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -51,31 +51,34 @@ table {
     Pollster Specific Styles
  */
 body {
-    font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background: #E3F6CE;
-    color: #01A9DB;
+    font: 300 16px/22px "Droid Sans";
+    background: 'white';
 }
-
+pollBody {
+  margin-left: 40px;
+  padding-top: 40px;
+}
 header {
-    background: #F6E3CE;
+    background-image: url(quesMarks.png);
     text-align: center;
-    color: #01A9DB;
-    height: 150px;
+    color: #ffffff;
+    height: 300px;
     overflow: scroll;
 
 }
 
 header h1 {
-    font-size: 40px;
+    margin-top: 75px;
+    font-size: 60px;
     font-weight: 800;
     line-height: 70px;
-    letter-spacing: 1.3em;
     text-transform: uppercase;
 }
 
 header p {
-    font-size: 18px;
+    font-size: 35px;
     line-height: 25px;
+    font-weight: 'strong';
 }
 
 /* friendsView */
@@ -92,15 +95,17 @@ header p {
 /* Highlights the element used for button like element */
 button {
     font-weight: 400;
-    background: #CED8F6;
-    color: #01A9DB;
+    background:rgba(0, 68, 214, 1);
+    color: #ffffff;
     /*margin: 3 10 3 10;*/
-    padding: 3 10 3 10;    /*3 9 3 9;*/
+    padding: 10px 15px;    /*3 9 3 9;*/
     line-height: 21px;
-    font-size: 19px;
+    font-size: 22px;
+    border-radius: 50px;
 }
-button:hover { 
-    background-color: #F6CED8;
+button:hover {
+    background-color: #a8c4ff;
+    color: #000;
 }
 
 h2 {
@@ -121,7 +126,7 @@ b {
 
 /* add friends view */
 .userList:hover {
-    color: #2E64FE;
+    color: 'grey';
 }
 
 #pollTitle {
@@ -131,15 +136,21 @@ b {
     line-height: 70px;
     font-weight: bold;
 }
-
+.menuBar {
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
 /* lists */
 ul {
-    padding: 5px;
+    padding: 10px;
     margin: 8px;
 }
 
 li {
     list-style: disc;
+    padding-top: 2px;
+    padding-bottom: 2px;
     padding-left: 5px;
     margin-left: 20px;
 }
@@ -150,8 +161,9 @@ input {
     width: 60%;
     font-size: 18px;
     vertical-align: middle;
-    color: #01A9DB;
-    background-color: #F7F8E0;
+    color: #15113b;
+    background-color: #e8e8e8;
+;
     border-radius: 5px;
 }
 
@@ -172,7 +184,7 @@ tr, th {
 }
 
 .signOut:hover {
-    background-color: #FA5882;
+    background-color: #bdbdbd;
 }
 
 .viewContainer {
